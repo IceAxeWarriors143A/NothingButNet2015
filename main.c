@@ -8,6 +8,7 @@
 #include "controller.h"
 #include "drive.h"
 
+/* "Link" with other files */
 #include "drive.c"
 
 task main()
