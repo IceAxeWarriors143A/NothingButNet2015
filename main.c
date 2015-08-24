@@ -1,20 +1,31 @@
 
-#pragma config(Motor,  port2,           shooterleft,   tmotorVex393_MC29, openLoop, reversed)
-#pragma config(Motor,  port3,           shooterright,   tmotorVex393_MC29, openLoop)
-#pragma config(Motor,  port4,           spinnyintakeofdoomnumber1,   tmotorVex393_MC29, openLoop)
-#pragma config(Motor,  port5,           garry,   tmotorVex393_MC29, openLoop)
-#pragma config(Motor,  port6,           therollmodel, tmotorVex393_MC29, openLoop)
-
+#include "motors.h"
 #include "controller.h"
 #include "drive.h"
 
 /* "Link" with other files */
 #include "drive.c"
 
+static void init_motors();
+
 task main()
 {
+	init_motors();
+
 	while(1) {
-		motor[shooterleft] = motor[shooterright] = 127;
-		motor[spinnyintakeofdoomnumber1] = motor[garry] = motor[therollmodel] = 127;
+		motor[mlshooter] = motor[mrshooter] = 127;
+		motor[mintake_s1] = motor[mintake_s2] = motor[mintake_s3] = 127;
 	}
+}
+
+static void init_motors()
+{
+	motorType[mleftside] = tmotorVex393_MC29;
+	motorType[mrightside] = tmotorVex393_MC29;
+	motorType[mstrafe] = tmotorVex393_MC29;
+	motorType[mintake_s1] = tmotorVex393_MC29;
+	motorType[mintake_s2] = tmotorVex393_MC29;
+	motorType[mintake_s3] = tmotorVex393_MC29;
+	motorType[mlshooter] = tmotorVex393_MC29;
+	motorType[mrshooter] = tmotorVex393_MC29;
 }
