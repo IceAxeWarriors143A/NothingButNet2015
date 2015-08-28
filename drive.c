@@ -2,17 +2,18 @@
 #include "drive.h"
 #include "controller.h"
 
-void drive(enum drive_mode mode, const struct controller* ctrlr)
+void drive(enum drive_mode mode)
 {
 	switch(mode) {
 		case kHDRIVE1:
-			hdrive1(ctrlr);
+			hdrive1();
 			break;
 		default:
 			break;
 	}
 }
 
-void hdrive1(const struct controller* ctrlr)
+void hdrive1()
 {
+
 }
