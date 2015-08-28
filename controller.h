@@ -2,7 +2,9 @@
 #ifndef CONTROLLER_H
 #define CONTROLLER_H
 
-#include "drive.h"
+enum drive_mode {
+	kHDRIVE1,
+};
 
 struct drive_controls {
 	int placeholder;

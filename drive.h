@@ -4,11 +4,7 @@
 
 #include "controller.h"
 
-enum drive_mode {
-	kHDRIVE1,
-};
-
-void drive(enum drive_mode, const struct controller*);
-void hdrive1(const struct controller*);
+void drive(enum drive_mode mode, struct controller* ctrlr);
+void hdrive1(struct controller* ctrlr);
 
 #endif
