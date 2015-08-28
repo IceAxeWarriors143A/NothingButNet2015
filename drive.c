@@ -1,6 +1,7 @@
 
 #include "drive.h"
-#include "controller.h"
+
+static void hdrive1();
 
 void drive(enum drive_mode mode)
 {
@@ -13,7 +14,7 @@ void drive(enum drive_mode mode)
 	}
 }
 
-void hdrive1()
+static void hdrive1()
 {
 
 }

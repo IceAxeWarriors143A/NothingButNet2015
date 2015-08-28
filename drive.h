@@ -2,9 +2,10 @@
 #ifndef DRIVE_H
 #define DRIVE_H
 
-#include "controller.h"
+enum drive_mode {
+	kHDRIVE1,
+};
 
 void drive(enum drive_mode mode);
-void hdrive1();
 
 #endif

@@ -1,6 +1,5 @@
 
 #include "motors.h"
-#include "controller.h"
 #include "drive.h"
 
 /* "Link" with other files */
@@ -28,4 +27,5 @@ static void init_motors()
 	motorType[mintake_s3] = tmotorVex393_MC29;
 	motorType[mlshooter] = tmotorVex393_MC29;
 	motorType[mrshooter] = tmotorVex393_MC29;
+	bMotorReflected[mrightside] = true;
 }
