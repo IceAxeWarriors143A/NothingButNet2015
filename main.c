@@ -19,13 +19,13 @@ task main()
 
 static void init_motors()
 {
-	motorType[mleftside] = tmotorVex393_MC29;
-	motorType[mrightside] = tmotorVex393_MC29;
+	motorType[mlside] = tmotorVex393_MC29;
+	motorType[mrside] = tmotorVex393_MC29;
 	motorType[mstrafe] = tmotorVex393_MC29;
 	motorType[mintake1] = tmotorVex393_MC29;
 	motorType[mintake2] = tmotorVex393_MC29;
 	motorType[mintake3] = tmotorVex393_MC29;
 	motorType[mlshooter] = tmotorVex393_MC29;
 	motorType[mrshooter] = tmotorVex393_MC29;
-	bMotorReflected[mrightside] = true;
+	bMotorReflected[mrside] = true;
 }

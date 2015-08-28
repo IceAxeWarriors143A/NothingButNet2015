@@ -3,8 +3,8 @@
 #define MOTORS_H
 
 /* NOTE: extern is not supported in ROBOTC */
-const int mleftside = port1;
-const int mrightside = port2;
+const int mlside = port1;
+const int mrside = port2;
 const int mstrafe = port3;
 const int mintake1 = port4;
 const int mintake2 = port5;
